@@ -4,7 +4,7 @@ import React from "react";
 import MyHeader from "./MyHeader";
 
 function App() {
-  let name = "이하영";
+  //let name = "이하영";
 
   const style = {
     App: {
@@ -18,12 +18,14 @@ function App() {
     },
   };
 
+  const number = 5;
+
   return (
     <div style={style.App}>
       <MyHeader />
-      <h2 style={style.h2}>안녕 리액트 {name}</h2>
+      <h2 style={style.h2}>안녕 리액트</h2>
       <b style={style.bold_text} id="bold_text">
-        React.js
+        {number}는 : {number % 2 === 0 ? "짝수" : "홀수"}
       </b>
     </div>
   );
