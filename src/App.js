@@ -1,14 +1,16 @@
+import React from "react";
 import "./App.css";
 
 import MyHeader from "./MyHeader";
 
 function App() {
+  let name = "이하영";
+
   return (
     <div className="App">
       <MyHeader />
-      <header className="App-header">
-        <h2>안녕 리액트</h2>
-      </header>
+      <h2>안녕 리액트 {name}</h2>
+      <b id="bold_text">React.js</b>
     </div>
   );
 }
