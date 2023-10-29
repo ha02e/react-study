@@ -1,4 +1,5 @@
 import React from "react";
+import Container from "./Container";
 import Counter from "./Counter";
 //import "./App.css";
 
@@ -14,10 +15,12 @@ function App() {
   };
 
   return (
-    <div>
-      <MyHeader />
-      <Counter {...counterProps} />
-    </div>
+    <Container>
+      <div>
+        <MyHeader />
+        <Counter {...counterProps} />
+      </div>
+    </Container>
   );
 }
 
